@@ -1,6 +1,5 @@
 import sys
 import traceback
-
 from fastmcp import FastMCP
 
 try:
@@ -36,7 +35,6 @@ except ImportError:
 
 mcp: FastMCP = FastMCP("SSBServer")
 
-
 mcp.tool()(ssb_get_api_status)
 mcp.tool()(ssb_browse_folders)
 mcp.tool()(ssb_search_tables)
@@ -48,8 +46,6 @@ mcp.tool()(ssb_get_table_variables)
 mcp.tool()(ssb_find_region_code)
 mcp.tool()(ssb_test_selection)
 mcp.tool()(ssb_preview_data)
-
-
 mcp.prompt()(ssb_entry_prompt)
 
 
