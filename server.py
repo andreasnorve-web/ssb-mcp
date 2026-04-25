@@ -34,7 +34,7 @@ except ImportError:
         ssb_test_selection,
     )
 
-mcp: FastMCP = FastMCP("SSBServer", port=8007, host="0.0.0.0")
+mcp: FastMCP = FastMCP("SSBServer")
 
 
 mcp.tool()(ssb_get_api_status)
